@@ -1,0 +1,101 @@
+#%RAML 1.0
+title: Raml Dispatcher
+version: 1.0.0
+baseUri:  http://localhost/
+baseUriParameters: {}
+types:
+  Model:
+    displayName: Model
+    type: object
+    properties:
+      transformation:
+        required: false
+        displayName: transformation
+        type: Transformation
+      serviceUri:
+        required: false
+        displayName: serviceUri
+        type: string
+  Transformation:
+    displayName: Transformation
+    type: object
+    properties:
+      idFactura:
+        required: false
+        displayName: idFactura
+        type: integer
+        format: int32
+      valorFactura:
+        required: false
+        displayName: valorFactura
+        type: integer
+        format: int32
+      formato:
+        required: false
+        displayName: formato
+        type: integer
+        format: int32
+        enum:
+        - 0
+        - 1
+      operacion:
+        required: false
+        displayName: operacion
+        type: integer
+        format: int32
+        enum:
+        - 0
+        - 1
+        - 2
+  AgreementServicesRequest:
+    displayName: AgreementServicesRequest
+    type: object
+    properties:
+      transformation:
+        required: false
+        displayName: transformation
+        type: Transformation
+      serviceUri:
+        required: false
+        displayName: serviceUri
+        type: string
+  TransformationRequest:
+    displayName: TransformationRequest
+    type: object
+    properties:
+      idFactura:
+        required: false
+        displayName: idFactura
+        type: integer
+        format: int32
+      valorFactura:
+        required: false
+        displayName: valorFactura
+        type: integer
+        format: int32
+      formato:
+        required: false
+        displayName: formato
+        type: integer
+        format: int32
+        enum:
+        - 0
+        - 1
+      operacion:
+        required: false
+        displayName: operacion
+        type: integer
+        format: int32
+        enum:
+        - 0
+        - 1
+        - 2
+/api/Dispatcher:
+  post:
+    displayName: dispatcher
+    description: Commands to external services
+    body:
+      application/json:
+        displayName: body
+        description: Commands to external services
+        type: Model

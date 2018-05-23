@@ -1,0 +1,12 @@
+services:
+  dispatcherapp:
+    build:
+      context: C:\Users\javier\source\repos\DispatcherApp
+      dockerfile: DispatcherApp/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dispatcherapp
+    ports:
+    - 80/tcp
+    - 5500/tcp
+version: '3.0'

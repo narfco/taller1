@@ -1,0 +1,65 @@
+#%RAML 1.0
+title: Servicio de pagos multiplataforma
+mediaType: application/json
+baseUri: http://www.pagosnarfco.co/servicios/pagos/{version}
+version: v1
+
+
+/plataforma/consultar:
+   post:
+       description: Consulta el valor y empresa de servicios de la factura.
+              body:
+          application/json:
+            properties:
+                idFactura: number
+       responses:
+           200:
+               body:
+                  application/json:
+                           properties:
+                             idFactura: number
+                             valorFactura: number
+                             empresaFactura: string
+                             titularFactura: string
+                             identificacionTitular: string
+           404:
+               description: La factura no existe
+               application/json:
+                           properties:
+                             mensaje: string
+/plataforma/pagar:
+   post:
+       description: Realizar el pago de la factura.
+       body:
+          application/json:
+            properties:
+                idFactura: number
+                valorFactura: number
+       responses:
+           200:
+               body:
+                  application/json:
+                        idFactura: number
+                        numeroConfirmacion : number
+                        mensajeConfirmacion: number
+           404:
+               description: Error pagando
+/plataforma/compensar:
+   post:
+       description: Realizar la compensacion de la factura.
+       body:
+          application/json:
+            properties:
+                idFactura: number
+                valorFactura: number
+                numeroConfirmacionPago: number
+                
+       responses:
+           200:
+               body:
+                  application/json:
+                        idFactura: number
+                        numeroConfirmacionCompensacion: number
+                        mensajeConfirmacion : string
+           404:
+               description: Error compensando

@@ -1,0 +1,2 @@
+C:/Users/javier/source/repos/DispatcherApp/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache

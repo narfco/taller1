@@ -1,0 +1,13 @@
+version: '3'
+services:
+  coordinador-rest:
+    build: "coordinador-rest/."
+    container_name: coordinador-rest
+
+    ports:
+      - "8082:8082"
+  transform-data:
+    build: "transform-data/."
+    container_name: transform-data
+    ports:
+      - "8081:8081"

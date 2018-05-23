@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: Servicio de transformacion datos de acuerdo al contrato
+mediaType: application/json
+baseUri: http://www.transformdata.co/servicios/transformar/{version}
+version: v1
+
+types: 
+  Request:
+    properties:
+        idFactura: number
+        valorFactura: number
+        formato : string
+        operacion : string
+    example:
+        idFactura: 1
+        valorFactura: 10000
+        formato : "xml"
+        operacion : "consultar"
+
+/transformdata:
+    post:
+        description: Retorna el contenido del mensaje que se debe usar para llamar la operacion.
+        body: 
+            application/json:
+                type: Request
+        responses: 
+           200:
+               body:
+                    application/json:
+                     properties:
+                         mensaje: string
+            400:
+                description: Error en la conversion.
+                body:
+                    application/json:
+                     properties: 
+                         mensaje : sring                      

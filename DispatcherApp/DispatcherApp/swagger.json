@@ -1,0 +1,173 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Raml Dispatcher"
+  },
+  "host": "dispatcher.swagger.io",
+  "basePath": "/v1",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/Dispatcher": {
+      "post": {
+        "description": "Commands to external services",
+        "summary": "dispatcher",
+        "tags": [
+          "api"
+        ],
+        "operationId": "ApiDispatcherPost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Commands to external services",
+            "schema": {
+              "$ref": "#/definitions/Model"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Model": {
+      "title": "Model",
+      "type": "object",
+      "properties": {
+        "transformation": {
+          "$ref": "#/definitions/Transformation"
+        },
+        "serviceUri": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "Transformation": {
+      "title": "Transformation",
+      "type": "object",
+      "properties": {
+        "idFactura": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "valorFactura": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "formato": {
+          "$ref": "#/definitions/FormatoEnum"
+        },
+        "operacion": {
+          "$ref": "#/definitions/OperacionEnum"
+        }
+      }
+    },
+    "FormatoEnum": {
+      "title": "formatoEnum",
+      "example": 0,
+      "x-enum-elements": [
+        {
+          "name": "Enum_0",
+          "description": ""
+        },
+        {
+          "name": "Enum_1",
+          "description": ""
+        }
+      ],
+      "type": "integer",
+      "format": "int32",
+      "enum": [
+        "0",
+        "1"
+      ]
+    },
+    "OperacionEnum": {
+      "title": "operacionEnum",
+      "example": 0,
+      "x-enum-elements": [
+        {
+          "name": "Enum_0",
+          "description": ""
+        },
+        {
+          "name": "Enum_1",
+          "description": ""
+        },
+        {
+          "name": "Enum_2",
+          "description": ""
+        }
+      ],
+      "type": "integer",
+      "format": "int32",
+      "enum": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "AgreementServicesRequest": {
+      "title": "AgreementServicesRequest",
+      "type": "object",
+      "properties": {
+        "transformation": {
+          "$ref": "#/definitions/Transformation"
+        },
+        "serviceUri": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "TransformationRequest": {
+      "title": "TransformationRequest",
+      "type": "object",
+      "properties": {
+        "idFactura": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "valorFactura": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "formato": {
+          "$ref": "#/definitions/FormatoEnum"
+        },
+        "operacion": {
+          "$ref": "#/definitions/OperacionEnum"
+        }
+      }
+    }
+  }
+}

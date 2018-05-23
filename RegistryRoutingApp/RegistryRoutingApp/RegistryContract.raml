@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: Raml Registry
+version: 1.0.0
+baseUri: http://localhost/
+baseUriParameters: {}
+types:
+  RegistryResponse:
+    displayName: RegistryResponse
+    type: object
+    properties:
+      id:
+        required: false
+        displayName: id
+        type: integer
+        format: int32
+      nombreEmpresa:
+        required: false
+        displayName: nombreEmpresa
+        type: string
+      endpointUrl:
+        required: false
+        displayName: endpointUrl
+        type: string
+      formato:
+        required: false
+        displayName: formato
+        type: string
+/api/Registry:
+  get:
+    displayName: Registry
+    description: Registry
+    queryParameters:
+      id:
+        required: false
+        displayName: id
+        type: integer
+        format: int32

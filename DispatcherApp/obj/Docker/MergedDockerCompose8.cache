@@ -1,0 +1,27 @@
+services:
+  dispatcherapp:
+    build:
+      context: C:\Users\javier\source\repos\DispatcherApp
+      dockerfile: DispatcherApp/Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: dispatcherapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/DispatcherApp.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 32771:80/tcp
+    - 80/tcp
+    volumes:
+    - C:\Users\javier\source\repos\DispatcherApp\DispatcherApp:/app:rw
+    - C:\Users\javier\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\javier\.nuget\packages:/root/.nuget/packages:ro
+version: '3.0'

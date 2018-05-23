@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  dispatcherapp:
+    image: dispatcherapp
+    ports:
+        - "32771:80"
+    build:
+      context: .
+      dockerfile: DispatcherApp/Dockerfile
+      

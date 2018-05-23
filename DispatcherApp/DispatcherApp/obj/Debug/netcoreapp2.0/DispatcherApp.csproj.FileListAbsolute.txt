@@ -1,0 +1,22 @@
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.deps.json
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.runtimeconfig.json
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.runtimeconfig.dev.json
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.dll
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.csprojResolveAssemblyReference.cache
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.csproj.CoreCompileInputs.cache
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.AssemblyInfoInputs.cache
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.AssemblyInfo.cs
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.pdb
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.dll
+C:/Users/javier/source/repos/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.pdb
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.deps.json
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.runtimeconfig.json
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.runtimeconfig.dev.json
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.dll
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/bin/Debug/netcoreapp2.0/DispatcherApp.pdb
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.csprojAssemblyReference.cache
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.csproj.CoreCompileInputs.cache
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.AssemblyInfoInputs.cache
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.AssemblyInfo.cs
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.dll
+/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/DispatcherApp/DispatcherApp/obj/Debug/netcoreapp2.0/DispatcherApp.pdb

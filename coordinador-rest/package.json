@@ -1,0 +1,25 @@
+{
+  "name": "servicios-plataforma-pagos",
+  "version": "1.0.0",
+  "description": "Servicio plataforma de pagos",
+  "author": "Carlos Corzo <cfc603@gmail.com>",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/narfco/calculadoramodval.git"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "csv-load-sync": "^1.0.0",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
+    "sync-request": "^6.0.0",
+    "xml-parse-from-string": "^1.0.1",
+    "xml2js": "^0.4.19",
+    "xml2js-parser": "^1.1.1"
+  }
+}

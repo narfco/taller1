@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  registryroutingapp:
+    image: registryroutingapp
+    ports:
+        - "32772:80"
+    build:
+      context: .
+      dockerfile: RegistryRoutingApp/Dockerfile

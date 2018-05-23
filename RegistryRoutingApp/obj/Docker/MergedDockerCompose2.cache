@@ -1,0 +1,12 @@
+services:
+  registryroutingapp:
+    build:
+      context: c:\users\javier\source\repos\RegistryRoutingApp
+      dockerfile: RegistryRoutingApp/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: registryroutingapp
+    ports:
+    - 32770:80/tcp
+    - 80/tcp
+version: '3.0'
