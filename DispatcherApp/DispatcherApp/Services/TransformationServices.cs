@@ -11,7 +11,7 @@ namespace DispatcherApp.Services
 {
     public class TransformationServices
     {
-        private readonly Uri requestUrl = new Uri("http://192.168.5.180:8081/servicios/transformar/v1/transformdata");
+        private readonly Uri requestUrl = new Uri("http://192.168.43.68:8081/servicios/transformar/v1/transformdata");
         private readonly IHystrixCommand hystrixCommand;
         public TransformationServices(IHystrixCommandFactory hystrixCommandFactory)
         {

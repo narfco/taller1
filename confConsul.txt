@@ -1,2 +1,16 @@
-{ "id": 1, "nombreEmpresa": "Etb", "endpointUrl": "http://192.168.5.180:7070/w1-soap-svr/PagosServiceService", "formato": "Xml" }
-{ "id": 2, "nombreEmpresa": "Agua", "endpointUrl": "http://192.168.5.180:9090/servicios/pagos/v1/payments/", "formato": "Json" }
+key: ETB
+value:
+{
+	"id": 1,
+	"nombreEmpresa": "Etb",
+	"endpointUrl": "http://192.168.43.68:7070/w1-soap-svr/PagosServiceService",
+	"formato": "Xml"
+} 
+key:AGUA
+value:
+{
+	"id": 2,
+	"nombreEmpresa": "Agua",
+	"endpointUrl": "http://192.168.43.68:9090/servicios/pagos/v1/payments/",
+	"formato": "Json"
+}
