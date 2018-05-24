@@ -4,7 +4,7 @@ exports.llamarDispatcher = function (idfactura,valorFactura, empresa, servicio, 
 
     var request = require('sync-request');
     try {
-        var res = request('POST', "http://localhost:32771/api/Dispatcher", {
+        var res = request('POST', "http://192.168.5.180:32771/api/Dispatcher", {
             json: {
 
                 "transformation": {

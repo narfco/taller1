@@ -1,2 +1,0 @@
-c:/users/javier/source/repos/RegistryRoutingApp/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
-/home/narfco/Dropbox/Aesof/Mod. y Val Arq/TallerServiciosNarfco/RegistryRoutingApp/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
