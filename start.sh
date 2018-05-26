@@ -1,11 +1,3 @@
-cd coordinador-rest
-npm install
-cd ../transform-data
-npm install
-docker-compose up -d --build 
-cd ../DispatcherApp
-docker-compose up -d --build
-
 
 result=$( docker images -q consul )
 
@@ -16,4 +8,15 @@ else
   docker run -p 8500:8500 -d --name=devconsul1 consul
 
 fi
+
+cd coordinador-rest
+npm install
+cd ../transform-data
+npm install
+docker-compose up -d --build 
+cd ../DispatcherApp
+docker-compose up -d --build
+
+
+
 

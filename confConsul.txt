@@ -3,7 +3,7 @@ value:
 {
 	"id": 1,
 	"nombreEmpresa": "Etb",
-	"endpointUrl": "http://192.168.43.68:7070/w1-soap-svr/PagosServiceService",
+	"endpointUrl": "http://172.20.10.2:7070/w1-soap-svr/PagosServiceService",
 	"formato": "Xml"
 } 
 key:AGUA
@@ -11,6 +11,13 @@ value:
 {
 	"id": 2,
 	"nombreEmpresa": "Agua",
-	"endpointUrl": "http://192.168.43.68:9090/servicios/pagos/v1/payments/",
+	"endpointUrl": "http://172.20.10.2:9090/servicios/pagos/v1/payments/",
 	"formato": "Json"
 }
+key: LUZ
+{
+	"id": 3,
+	"nombreEmpresa": "Luz",
+	"endpointUrl": "http://172.20.10.2:9090/servicios/pagos/v1/payments/",
+	"formato": "json"
+} 

@@ -14,6 +14,40 @@ const version = 'v1';
 const app = express();
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+
+    res.send(200);
+});
+
+var request = require('sync-request');
+
+var res = request('PUT', "http://172.20.10.2:8500/v1/agent/service/register", {
+    json: 
+        {
+        "ID": "coordinador",
+        "Name": "coordinador",
+        "Tags": [
+            "coordinador"
+        ],
+        "Address": "172.20.10.2",
+        "Port": 8082,
+        "EnableTagOverride": false,
+        "Check": {
+            "id": "CheckCoordinador",
+            "Name": "CheckCoordinador",
+            "Interval": "10s",
+            "HTTP": "http://172.20.10.2:8082",
+            "tls_skip_verify": false,
+            "Method": "GET",
+            "DeregisterCriticalServiceAfter": "5m",
+            "timeout": "1s"
+        }
+    }
+
+});
+console.log(res.getBody('utf8'));
+
+
 app.post('/servicios/pagos/' + version + '/plataforma/consultar', (req, res) => {
 
     if (req.body.idFactura != undefined) {

@@ -13,11 +13,13 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "consul": "^0.31.0",
     "csv-load-sync": "^1.0.0",
     "express": "^4.16.3",
     "path": "^0.12.7",
     "request": "^2.87.0",
     "sync-request": "^6.0.0",
+    "uuid": "^3.2.1",
     "xml-parse-from-string": "^1.0.1",
     "xml2js": "^0.4.19",
     "xml2js-parser": "^1.1.1"
